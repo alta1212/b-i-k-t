@@ -1,0 +1,59 @@
+﻿@model bài_kết.Models.sanpham
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/layout/layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>sanpham</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ten)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ten)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.giamoi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.giamoi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mota)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mota)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.star)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.star)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.anh }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
